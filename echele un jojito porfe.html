@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+      }
+      .root {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .content {
+        background-color: #fff;
+        padding: 20px;
+        width: 500px;
+        height: 400px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .conte-logo {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        height: 200px;
+        width: 100%;
+      }
+      .logo {
+        margin-top: 20px;
+      }
+      .welcom {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      .welcom h2 {
+        color: rgb(5, 16, 110);
+        margin-bottom: 5px;
+        font-size: 30px;
+      }
+      .welcom p {
+        color: #292828;
+        font-size: 14px;
+        font-style: italic;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        height: 87%;
+      }
+
+      label {
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 5px;
+      }
+
+      input:not(.btn) {
+        font-size: 16px;
+        padding: 10px;
+        outline: none;
+      }
+
+      input:focus {
+        border: 2px solid rgb(2, 11, 94);
+        border-radius: 4px;
+      }
+
+      input::placeholder {
+        color: #ccc;
+        font-style: italic;
+      }
+
+      .btn {
+        background-color: rgb(0, 5, 48);
+        color: white;
+        border: none;
+        padding: 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+      .btn:hover {
+        background-color: rgb(2, 11, 94);
+      }
+      .divider {
+        text-align: center;
+      }
+    </style>
+    <title>Bienvenido | BBVA</title>
+  </head>
+  <body>
+    <div class="conte-logo">
+      <div class="logo">
+        <a
+          href="https://www.provincial.com/personas.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/BBVA_2019.svg/1280px-BBVA_2019.svg.png"
+            alt="logo bbva"
+            width="300"
+        /></a>
+      </div>
+    </div>
+    <div class="root">
+      <div class="content">
+        <div class="welcom">
+          <h2>Bienvenido a BBVA</h2>
+          <p>Por favor, ingresa tus datos para continuar</p>
+        </div>
+        <form action="">
+          <label for="name">Usuario:</label>
+          <input
+            type="text"
+            id="user"
+            name="user"
+            placeholder="Usuario cliente"
+            required
+          />
+          <br />
+          <label for="Contraseña">Contraseña:</label>
+          <input
+            type="password"
+            id="Contraseña"
+            name="Contraseña"
+            placeholder="**********"
+            required
+          />
+          <br />
+          <input class="btn" type="submit" value="ENVIAR" />
+          <br />
+          <div class="divider">
+            <p>¿Aún no eres cliente? <a href="#">Regístrate</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
