@@ -12,6 +12,8 @@
       body {
         font-family: Arial, sans-serif;
         background-color: #f0f0f0;
+        background-image: url(https://www.bbva.com/wp-content/uploads/2021/07/suscribirse-newsletter-sostenibilidad-BBVA.jpg);
+        background-size: cover;
       }
       .root {
         display: flex;
@@ -65,8 +67,27 @@
         margin-bottom: 5px;
       }
 
+      .input {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+      svg {
+        color: #292828;
+      }
+
+      .icon {
+        background-color: rgb(0, 5, 48);
+        padding: 8px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
       input:not(.btn) {
         font-size: 16px;
+        width: 100%;
         padding: 10px;
         outline: none;
       }
@@ -97,6 +118,10 @@
         text-align: center;
       }
     </style>
+    <link
+      rel="icon"
+      href="https://es.marketscreener.com/static/private-issuer-squared-740EG.png"
+    />
     <title>Bienvenido | BBVA</title>
   </head>
   <body>
@@ -121,27 +146,107 @@
         </div>
         <form action="">
           <label for="user">Usuario:</label>
-          <input
-            type="text"
-            id="user"
-            name="user"
-            placeholder="Usuario cliente"
-            required
-          />
+          <div class="input">
+            <div class="icon">
+              <svg
+                width="30px"
+                height="30px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <circle
+                    cx="12"
+                    cy="6"
+                    r="4"
+                    stroke="#ffffff"
+                    stroke-width="1.5"
+                  ></circle>
+                  <path
+                    d="M19.9975 18C20 17.8358 20 17.669 20 17.5C20 15.0147 16.4183 13 12 13C7.58172 13 4 15.0147 4 17.5C4 19.9853 4 22 12 22C14.231 22 15.8398 21.8433 17 21.5634"
+                    stroke="#ffffff"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <input
+              type="text"
+              id="user"
+              name="user"
+              placeholder="Usuario cliente"
+              required
+            />
+          </div>
           <br />
           <label for="Contraseña">Contraseña:</label>
-          <input
-            type="password"
-            id="Contraseña"
-            name="Contraseña"
-            placeholder="**********"
-            required
-          />
+          <div class="input">
+            <div class="icon">
+              <svg
+                width="30px"
+                height="30px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                stroke="#0400d6"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke="#CCCCCC"
+                  stroke-width="0.72"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M12 10V14M10.2676 11L13.7317 13M13.7314 11L10.2673 13"
+                    stroke="#ffffff"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  ></path>
+                  <path
+                    d="M6.73241 10V14M4.99999 11L8.46409 13M8.46386 11L4.99976 13"
+                    stroke="#ffffff"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  ></path>
+                  <path
+                    d="M17.2681 10V14M15.5356 11L18.9997 13M18.9995 11L15.5354 13"
+                    stroke="#ffffff"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  ></path>
+                  <path
+                    d="M22 12C22 15.7712 22 17.6569 20.8284 18.8284C19.6569 20 17.7712 20 14 20H10C6.22876 20 4.34315 20 3.17157 18.8284C2 17.6569 2 15.7712 2 12C2 8.22876 2 6.34315 3.17157 5.17157C4.34315 4 6.22876 4 10 4H14C17.7712 4 19.6569 4 20.8284 5.17157C21.4816 5.82475 21.7706 6.69989 21.8985 8"
+                    stroke="#ffffff"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <input
+              type="password"
+              id="Contraseña"
+              name="Contraseña"
+              placeholder="**********"
+              required
+            />
+          </div>
           <br />
           <input class="btn" type="submit" value="ENVIAR" />
           <br />
           <div class="divider">
-            <p>¿Aún no eres cliente? <a href="#">Regístrate</a></p>
+            <p>¿Aún no eres cliente?, <a href="#">Regístrate</a></p>
           </div>
         </form>
       </div>
