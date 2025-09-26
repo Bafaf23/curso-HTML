@@ -7,7 +7,7 @@
 body {
   padding: 30px 30px;
   font-family: sans-serif, Helvetica, Arial;
-  background: #fafafa;
+  background: #f1f0f0;
   cursor: default;
 }
 
@@ -51,9 +51,10 @@ span {
   font-style: italic;
   padding: 5px;
   border-radius: 999px;
-  color: rgb(114, 112, 112);
-  background: rgb(240, 238, 238);
+  color: rgb(0, 0, 0);
+  background: rgb(219, 231, 253);
 }
+
 section {
   background: white;
   padding: 20px;
@@ -71,20 +72,26 @@ section h3 {
 .education {
   margin-top: 10px;
   padding: 5px;
-  background: rgb(253, 253, 253);
-  border-left: 2px solid rgb(255, 230, 0);
-}
-
-.experience {
-  background: rgb(253, 253, 253);
-  border-left: 2px solid rgb(0, 255, 42);
-  margin-top: 10px;
-  padding: 5px;
+  background: rgb(252, 252, 252);
+  border-radius: 5px;
 }
 
 .title {
-  background: rgb(247, 245, 245);
-  border-left: 2px solid rgb(21, 5, 165);
+  background: rgb(223, 222, 221);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.education-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.experience {
+  background: rgb(252, 252, 252);
+  border-radius: 5px;
+  margin-top: 10px;
   padding: 5px;
 }
 
@@ -104,33 +111,31 @@ section p {
 .job-description {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-
-.education-details {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .skill-description {
-  display: flex;
   margin-top: 10px;
-  gap: 6px;
-  background-color: rgb(253, 253, 253);
+  background-color: rgb(252, 252, 252);
+  border-radius: 5px;
   padding: 5px;
-  border-left: 2px solid rgb(0, 247, 255);
-  align-items: center;
+}
+
+.skill-description h5 {
+  background: rgb(223, 222, 221);
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 footer {
   padding: 10px;
   border-radius: 10px;
-  background: rgb(251, 255, 0);
+  background: rgb(0, 255, 191);
   text-align: center;
 }
 
 footer p {
   text-align: center;
+  color: rgb(0, 0, 0);
   font-size: 14px;
 }
