@@ -55,7 +55,7 @@ nav a:hover {
 aside {
   border-radius: 10px;
   padding: 10px;
-  width: 40rem;
+  width: 30rem;
   background: rgb(5, 243, 211);
 }
 
@@ -82,12 +82,19 @@ ul a {
 main {
   display: grid;
   gap: 10px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 0fr);
+}
+
+.article {
+  background: red;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 article {
   background: rgb(250, 168, 16);
-  height: fit-content;
+  height: 300px;
   padding: 5px;
   border-radius: 10px;
 }
@@ -95,6 +102,7 @@ article {
 article p {
   background: rgba(255, 255, 255, 0.5);
   padding: 5px;
+  height: 230px;
   border-radius: 10px;
 }
 
