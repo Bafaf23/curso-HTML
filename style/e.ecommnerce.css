@@ -12,17 +12,15 @@ body {
 }
 
 header {
-  position: sticky;
-  top: 0;
-  z-index: 10;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
   background: rgb(255, 255, 255);
   padding: 20px 0;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px;
   margin-bottom: 20px;
   box-shadow: 1px 1px 20px rgb(213, 213, 226);
+  gap: 10px;
 }
 
 footer {
@@ -39,20 +37,21 @@ nav {
   gap: 15px;
   padding: 10px;
   border-radius: 10px;
+  background: rgb(0, 12, 117);
 }
 
 nav a {
   padding: 10px;
-  border: 1px solid rgb(0, 0, 209);
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 5px;
   text-decoration: none;
-  color: rgb(9, 28, 201);
+  color: rgb(255, 255, 255);
 }
 
 nav a:hover {
   transition: 0.4s;
-  background: rgb(4, 4, 196);
-  color: white;
+  background: rgb(255, 255, 255);
+  color: rgb(25, 0, 255);
 }
 
 header input {
@@ -63,20 +62,47 @@ header input {
   border-radius: 10px;
 }
 
+.conten-card {
+  background: rgb(174, 180, 243);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.titel-section {
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 150px;
+  border-radius: 0 100px 100px;
+  background: rgb(4, 163, 184);
+  color: #f6f6f6;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background: rgb(0, 224, 253);
+  border-radius: 10px;
+  margin-bottom: 20px;
+
+  gap: 20px;
+}
+
 .content {
   display: flex;
-  gap: 0.7rem;
-  margin-bottom: 15px;
+  overflow: hidden;
+  overflow-x: scroll;
+  gap: 20px;
 }
 
 .content-card {
-  display: flex;
-  flex-wrap: wrap;
-  flex-flow: column wrap;
-  gap: 10px;
+  width: 300px;
+  height: fit-content;
   padding: 15px;
   border-radius: 10px;
-  background: white;
+  background: rgb(255, 255, 255);
 }
 
 .titel {
@@ -86,6 +112,8 @@ header input {
 
 .discri {
   text-align: justify;
+  padding: 10px;
+  border-radius: 10px;
   background-color: rgb(241, 237, 237);
 }
 
@@ -128,10 +156,12 @@ button {
 }
 
 .content-grid {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: 1fr 1fr;
-  height: 50rem;
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  background: rgb(202, 201, 201);
+  padding: 10px;
+  border-radius: 10px;
   margin-bottom: 20px;
 }
 
@@ -144,12 +174,12 @@ button {
 img {
   border-radius: 5px;
   width: 100%;
-  height: 9rem;
+  height: 10rem;
 }
 
 .conten-info-grid {
   padding: 10px;
-  height: 60%;
+  height: fit-content;
   border-radius: 10px;
   background: rgb(17, 3, 139);
   color: white;
@@ -169,4 +199,48 @@ img {
   height: 70%;
   border-radius: 2px;
   background: rgba(255, 255, 255, 0.445);
+}
+
+@media only screen and (min-width: 755px) {
+  header {
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: rgb(255, 255, 255);
+    padding: 20px 0;
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 20px rgb(213, 213, 226);
+    position: sticky;
+    top: 10px;
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+  }
+
+  .content-grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    background: rgb(211, 209, 209);
+    border-radius: 10px;
+    padding: 10px;
+    height: fit-content;
+    margin-bottom: 20px;
+  }
+
+  .titel-section {
+    width: 150px;
+  }
+
+  .conten-card {
+    width: 100%;
+  }
 }
